@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap');
+
+/* Variáveis */
+:root {
+    --primary-color: #D32F2F; /* Vermelho sangue (para refletir o caos e violência) */
+    --secondary-color: #212121; /* Cor escura para refletir o vazio e desolação */
+    --highlight-color: #FF5733; /* Laranja para dar um toque de intensidade */
+    --text-color: #E1E1E1; /* Texto claro para contraste */
+    --background-color: #0A0A0A; /* Fundo escuro e agressivo */
+    --button-hover: #C32F2F; /* Vermelho intenso para hover dos botões */
+    --font-body: "Chocolate Classical Sans", serif; /* Fonte para o corpo */
+    --font-titulo: "Rakkas", serif; /* Fonte para títulos */
+    --font-epic: "Orbitron", sans-serif; /* Fonte de impacto e moderna */
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+/* Corpo da página */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-family: var(--font-body);
+    background-image: url('berserk-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Estilo para título e subtítulo */
+h1, h2 {
+    font-family: var(--font-titulo);
+    color: var(--primary-color);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 25px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Estilo para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--secondary-color);
+    margin: 20px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--text-color);
+    padding: 40px;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 4rem;
+    font-family: var(--font-titulo);
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+/* Navegação */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+    border-bottom: 2px solid var(--highlight-color);
+}
+
+/* Seções de conteúdo */
+.conteudo {
+    margin: 40px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+.conteudo h2 {
+    color: var(--highlight-color);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.conteudo h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-top: 25px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.conteudo p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Botão de chamada para ação */
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Estilo para iframe (vídeos embutidos) */
+iframe {
+    display: block;
+    margin: 30px auto;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+footer .cta-footer {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .cta-footer:hover {
+    color: var(--button-hover);
+}
+
+/* Seções de lista (para as consequências, por exemplo) */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para links internos */
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--button-hover);
+}
